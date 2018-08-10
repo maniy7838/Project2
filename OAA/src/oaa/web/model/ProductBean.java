@@ -240,7 +240,7 @@ public class ProductBean extends ActionForm {
 		try {
 
 			Product product = null;
-			String sql = "SELECT product_id,product_name,category_id,description,min_bid_price,photo,Date FROM product where user_id=? and status=?";
+			String sql = "SELECT product_id,product_name,category_id,description,min_bid_price,photo,auction_date FROM product where user_id=? and status=?";
 
 			PreparedStatement ps = connection.prepareStatement(sql);
 			ps.setInt(1, user_id);
